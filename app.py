@@ -14,6 +14,10 @@ def contatos():
 def quem_somos():
     return render_template("quem-somos.html")
 
+@app.route('/tecnoblog')
+def tecnoblog():
+    return render_template('tecnoblog.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
